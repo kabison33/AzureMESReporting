@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "manf-pipeline"
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"LocalSQLEXPRESS_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "khosyi-leanflow.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "leanflow"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LocalSQLEXPRESS_properties_typeProperties_server": {
+			"value": "localhost,1433"
+		},
+		"LocalSQLEXPRESS_properties_typeProperties_database": {
+			"value": "leanflow"
+		},
+		"LocalSQLEXPRESS_properties_typeProperties_userName": {
+			"value": "adfuser"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
