@@ -7,7 +7,11 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MLF_DISC_ITEM_SERIAL"
+		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }
