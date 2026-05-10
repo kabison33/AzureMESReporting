@@ -1,0 +1,43 @@
+{
+	"name": "LOCAL_MLF_BOM",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalSQLEXPRESS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "PRODUCT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VERSION",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EXPLOSION_LEVEL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COMP_PART_NO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COMP_QTY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COMP_TYPE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MLF_BOM"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

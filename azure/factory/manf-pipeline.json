@@ -1,0 +1,15 @@
+{
+	"name": "manf-pipeline",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8704f1f1-15ac-4617-a542-b87004afbaf9",
+		"tenantId": "91370a31-38d4-4605-9ae1-2df6db81ddec"
+	}
+}

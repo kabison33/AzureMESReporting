@@ -1,0 +1,131 @@
+{
+	"name": "LOCAL_SLFV_BUILDABLE_PRODUCT_DETAIL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalSQLEXPRESS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "pr_part_no_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "pr_part_no",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_sn",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_order_no",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_built",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "pr_etf",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "pr_oper_no",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_oper_title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_center_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_center_title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_dept_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_dept_title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_location_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_location_title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "pr_disc_raised",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ch_part_no",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_order_no",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_serial_no",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_oper_no",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_oper_title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_center_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_center_title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_dept_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_dept_title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_location_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_location_title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ch_disc_raised",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SLFV_BUILDABLE_PRODUCT_DETAIL"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

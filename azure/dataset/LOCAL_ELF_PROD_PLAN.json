@@ -1,0 +1,31 @@
+{
+	"name": "LOCAL_ELF_PROD_PLAN",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalSQLEXPRESS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ITEM_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PART_NO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PART_TITLE",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ELF_PROD_PLAN"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "AZURE_MLF_ROUTE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MLF_ROUTE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

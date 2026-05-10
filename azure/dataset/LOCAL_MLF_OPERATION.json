@@ -1,0 +1,94 @@
+{
+	"name": "LOCAL_MLF_OPERATION",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalSQLEXPRESS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ORDER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OPER_KEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "OPER_NO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "STEP_KEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TITLE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OPER_STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ACTUAL_INQUEUE_DATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ACTUAL_START_DATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ACTUAL_END_DATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LAST_ACTIVITY_TIME_STAMP",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "UPDT_USERID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ASGND_CENTER_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ASGND_DEPARTMENT_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ASGND_LOCATION_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "COMPLETE_QTY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SCRAP_QTY",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MLF_OPERATION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

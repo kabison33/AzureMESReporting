@@ -1,0 +1,66 @@
+{
+	"name": "LOCAL_MLF_ROUTE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LocalSQLEXPRESS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ROUTE_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PART_NO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PLAN_NO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PLAN_VERSION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PLAN_REVISION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REV_STATUS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OPER_NO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OPER_TITLE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PLND_CENTER_CODE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OPER_KEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STD_HOURS",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MLF_ROUTE"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
