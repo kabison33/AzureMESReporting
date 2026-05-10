@@ -799,10 +799,11 @@
 						"partitionOption": "None"
 					},
 					"sink": {
-						"type": "SqlServerSink",
+						"type": "AzureSqlSink",
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false,
-						"tableOption": "autoCreate"
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
 					"translator": {
@@ -908,7 +909,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "LOCAL_MLF_ORGANIZATION",
+						"referenceName": "AZURE_MLF_ORGANIZATION",
 						"type": "DatasetReference"
 					}
 				]
